@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<html>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>jQuery YouTube Lazy-Loader Plugin Demo</title>
+		<style>
+			.youtube{
+				width: 640px;
+				height: 480px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- YouTube player container -->
+		<div class="youtube" data-youtube="4eYSpIz2FjU"></div>
+		
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.youtube.lazyloader.min.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				$(".youtube").YouTubeLazyLoader();
+			});
+		</script>
+	</body>
+</html>
