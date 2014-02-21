@@ -15,7 +15,7 @@
                 var data = obj.data('YouTube');
                 if (!data) { //check if event is already assigned
                     obj.data('YouTubeLazyLoader', true);
-
+					obj.addClass(options.cssClass);
                     var youtubeId = options.youtubeId;
                     if ($.trim(youtubeId) == '' || youtubeId === false) {
                         youtubeId = obj.attr(options.idAttribute);
